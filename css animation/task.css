@@ -1,0 +1,196 @@
+.wrapper {
+	height: 500px;
+	width:900px;
+	border: 5px dotted blue;
+	position: relative;
+}
+
+.sky {
+	width:900px;
+	height:250px;
+	background-image: url('sk.png');
+	position: :absolute;	
+}
+
+.sea {
+	width:900px;
+	height:250px;
+	background-image: url('SEA.jpg');	
+	position: absolute;
+	top:250px;
+}
+
+@keyframes korabcheta {
+	0%{
+		top:256px;
+		left:20px;
+	}
+	10%{
+		top:256px;
+		left:70px;
+	}
+	20% {
+		top:256px;
+		left:150px;
+	}
+	30% {
+		top:256px;
+		left:200px;
+	}
+	40% {
+		top:256px;
+		left:250px;
+	}
+	50% {
+		top:256px;
+		left:300px;
+	}
+	60% {
+		top:256px;
+		left:350px;
+	}
+	70% {
+		top:256px;
+		left:400px;
+	}
+	80% {
+		top:256px;
+		left:450px;
+	}
+	90% { 
+	    top:256px;
+		left:500px;
+	}
+	100% {
+		top:256px;
+		left:550px;	
+	}
+
+}
+
+.boat {
+	position: absolute;
+	top:265px;
+	left:20px;
+	animation-name: korabcheta;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	transition: linear;
+}
+
+@keyframes boat2 {
+	0%{
+		top:350px;
+		left:660px;
+	}
+	10%{
+		top:350px;
+		left:600px;
+	}
+	20% {
+		top:350px;
+		left:550px;
+	}
+	30% {
+		top:350px;
+		left:500px;
+	}
+	40% {
+		top:350px;
+		left:450px;
+	}
+	50% {
+		top:350px;
+		left:400px;
+	}
+	60% {
+		top:350px;
+		left:350px;
+	}
+	70% {
+		top:350px;
+		left:300px;
+	}
+	80% {
+		top:350px;
+		left:250px;
+	}
+	90% { 
+	    top:350px;
+		left:200px;
+	}
+	100% {
+		top:350px;
+		left:150px;	
+	}
+
+}
+.boat2 {
+	position: absolute;
+	top:350px;
+	left:600px;
+	animation-name: boat2;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	transition: linear;
+}
+
+.sun {
+	position: absolute;
+	top: 220px;
+	left:767px;
+	animation-name: sun;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	transition: linear;
+}
+
+@keyframes sun {
+	0%{
+		top:220px;
+		left:767px;
+	}
+	10%{
+		top:198px;
+		left:690px;
+	}
+	20% {
+		top:176px;
+		left:610px;
+	}
+	30% {
+		top:154px;
+		left:530;
+	}
+	40% {
+		top:132px;
+		left:450px;
+	}
+	50% {
+		top:110px;
+		left:370px;
+	}
+	60% {
+		top:132px;
+		left:290px;
+	}
+	70% {
+		top:154px;
+		left:210px;
+	}
+	80% {
+		top:176px;
+		left:130px;
+	}
+	90% { 
+	    top:198px;
+		left:120px;
+	}
+	100% {
+		top:220px;
+		left:100px;	
+	}
+}
+
+
+
