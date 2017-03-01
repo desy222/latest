@@ -1,0 +1,26 @@
+<div class="container col-lg-3">
+    <h1>Book form</h1>
+    <form (ngSubmit)="onSubmit()" #bookForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input [(ngModel)]="book.Name" type="text" class="form-control" id="name"  name="Name" required>
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input [(ngModel)]="book.Author" type="text" class="form-control" id="author" name="Author" required>
+      </div>
+        <div class="form-group">
+        <label for="price">Price</label>
+        <input [(ngModel)]="book.Price" type="text" class="form-control" id="price" name="price">
+      </div>
+        <div class="form-group">
+        <label for="picture">Picture</label>
+        <input [(ngModel)]="book.PictureURL" type="text" class="form-control" id="picture" name="picture">
+      </div>      
+      <div class="form-group">
+        <label for="rating">Rating</label>
+        <input [(ngModel)]="book.Rating" type="text" class="form-control" id="rating" name="rating">
+      </div>
+      <button type="submit" class="btn btn-default" (click)="addBook(); bookForm.reset()">Add Book</button>
+    </form>
+</div>

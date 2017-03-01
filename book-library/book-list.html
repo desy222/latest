@@ -1,0 +1,26 @@
+<div class="container books-wrapper">
+  <div class="row">
+    <div class="col-md-12">
+      <div *ngFor="let book of books" [class.selected]="book === selectedBook" (click)="onSelect(book)">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object resp" src="{{book.PictureURL}}">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><label for="name"><input [(ngModel)]="book.name" placeholder="name"/>{{book.Name}}</label></h4>
+              <h5><label for="author"><input [(ngModel)]="book.author" placeholder="author"/>{{book.Author}}</label></h5>
+              <h5><label for="rating"><input [(ngModel)]="book.rating" placeholder="rating"/> {{book.Rating}}</label></h5>
+              <h5><label for="price"><input [(ngModel)]="book.price" placeholder="price"/> {{book.Price}}</label></h5>
+              <button type="button" class="btn btn-primary" (click)="delete(book); $event.stopPropagation()">Delete book</button>
+              <button type="button" class="btn btn-primary" (click)="editBook($showSection)" >Edit Book</button>
+              <button (click)="save()">Save</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
